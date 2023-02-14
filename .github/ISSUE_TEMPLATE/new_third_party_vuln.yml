@@ -13,16 +13,18 @@ body:
       value: |
         Thanks for taking the time to file a vulnerability report!
 
-        This form creates a public issue on our issue tracker containing all the details you report. It is intended for PUBLIC vulnerabilities in publicly importable Go packages not maintained by the Go Team (i.e., anything outside the Go standard library, Go toolchain, and golang.org modules).
+        This form creates a public issue on our issue tracker containing all the details you report. It is intended for PUBLIC vulnerabilities in publicly importable Go packages not maintained by the Go Team (i.e., anything outside the Go standard library, Go toolchain, and golang.org modules). 
 
         ❗ To report undisclosed Go vulnerabilities, please follow our [security policy](https://go.dev/security/policy) instead.
+        
+        If the vulnerability in question is already in the Go database, fill out [this form](https://github.com/golang/vulndb/issues/new?assignees=&labels=Needs+Triage%2CSuggested+Edit&template=suggest_edit.yaml&title=x%2Fvulndb%3A+suggestion+regarding+%3CGO-XXXX-YYYY%3E) to submit an edit to an existing report. 
 
         For questions or concerns, do not hesitate to reach out to us directly at security@golang.org.
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: A description of the vulnerability.
+      description: A description of the vulnerability. See the [vulnerability database](https://pkg.go.dev/vuln/list) for example descriptions. Be concise, but be sure to include the way an attacker might exploit the issue.
     validations:
       required: true
   - type: textarea

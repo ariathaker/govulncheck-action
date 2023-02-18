@@ -22,7 +22,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: A description of the vulnerability.
+      description: A description of the vulnerability. See the [vulnerability database](https://pkg.go.dev/vuln/list) for example descriptions. Be concise, but include the way an attacker might exploit the issue.
     validations:
       required: true
   - type: textarea
